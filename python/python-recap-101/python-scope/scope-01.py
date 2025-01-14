@@ -9,7 +9,7 @@ def print_global_scope():
         print(globals())
         print()        
 
-print_global_scope()
+# print_global_scope()
 
 # if we want to know what a module offers, or the scope of the module, we 
 # can use the dir() function or the __dict__ attribute.
@@ -23,3 +23,22 @@ def print_what_a_module_has():
         print(math.__doc__)
 
         print(math.__dict__.keys())
+
+
+def see_what_a_function_has(name=None):
+        name2 = "doe"
+        age = 30 
+        print("name: ", name + " ", name2, "\nage: ", age)
+        
+# see_what_a_function_has(name="john")
+# using __code__.co_ we can inspect the scope, names, args etc of a function 
+# print(see_what_a_function_has.__code__)
+print(see_what_a_function_has.__code__.co_varnames)
+print(see_what_a_function_has.__code__.co_code)
+print(see_what_a_function_has.__code__.co_argcount)
+print(see_what_a_function_has.__code__.co_name)
+print(see_what_a_function_has.__code__.co_names)
+
+print(see_what_a_function_has.__code__.co_filename)
+
+# print(dir(see_what_a_function_has))
