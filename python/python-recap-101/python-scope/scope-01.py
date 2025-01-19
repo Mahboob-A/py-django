@@ -1,6 +1,6 @@
 # recap some basic python
 # 130125, monday, 08.30 am
-
+# https://realpython.com/python-scope-legb-rule/
 
 import http, math
 import builtins 
@@ -48,7 +48,7 @@ print(see_what_a_function_has.__code__.co_filename)
 # print(dir(builtins))
 
 
-# the regular for loops, the loop variable holds the last value processed by the loop after the loop ended. 
+# the regular for loops, the loop variable holds the last value processed by the loop after the loop ended.
 for item in range(1, 6):
         print(item)
 
